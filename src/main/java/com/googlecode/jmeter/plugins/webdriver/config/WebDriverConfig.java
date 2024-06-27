@@ -410,7 +410,7 @@ public abstract class WebDriverConfig<T extends WebDriver> extends ConfigTestEle
         // Custom IE capabilities
         // Settings to launch Microsoft Edge in IE mode
         // As of v4.5.0, IE Driver will automatically locate Edge on the system.
-        options.attachToEdgeChrome();
+        //options.attachToEdgeChrome();
         options.withInitialBrowserUrl(getInitialIeUrl());
 
         // Other options
@@ -426,7 +426,7 @@ public abstract class WebDriverConfig<T extends WebDriver> extends ConfigTestEle
         }
 
         // Capabilities shared by all browsers
-        setSharedCaps(options);
+        //setSharedCaps(options);
 		combineCustomCapabilities(options);
 
         return options;
