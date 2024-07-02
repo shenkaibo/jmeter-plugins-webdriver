@@ -415,9 +415,10 @@ public abstract class WebDriverConfig<T extends WebDriver> extends ConfigTestEle
 
         // Other options
         options.waitForUploadDialogUpTo(Duration.ofMillis(getFileUploadDialogTimeout()));
-        if (isEnsureCleanSession()) {
-            options.destructivelyEnsureCleanSession();
-        }
+//        if (isEnsureCleanSession()) {
+//            options.destructivelyEnsureCleanSession();
+//        }
+		options.destructivelyEnsureCleanSession();
         if (isIgnoreProtectedMode()) {
             options.introduceFlakinessByIgnoringSecurityDomains();
         }
